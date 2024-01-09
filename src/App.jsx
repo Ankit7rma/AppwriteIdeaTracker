@@ -4,7 +4,6 @@ import "./index.css";
 import { UserProvider, useUser } from "./lib/context/User";
 import { Home } from "./pages/Home";
 import { IdeasProvider } from "./lib/context/ideas";
-import { Link } from "react-router-dom";
 function App() {
   const isLoginPage = window.location.pathname === "/login";
   console.log(isLoginPage);
@@ -26,7 +25,7 @@ function Navbar() {
   return (
     <>
       <nav>
-        <Link to="/">Ideas tracker</Link>
+        <a href="/">Ideas tracker</a>
         <div>
           {user.current ? (
             <>
@@ -36,7 +35,7 @@ function Navbar() {
               </button>
             </>
           ) : (
-            <Link to="/login">Login</Link>
+            <a href="/login">Login</a>
           )}
         </div>
       </nav>
