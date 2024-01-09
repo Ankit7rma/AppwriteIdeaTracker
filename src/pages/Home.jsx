@@ -51,7 +51,7 @@ export function Home() {
       )}
       <section>
         <h2>Latest Ideas</h2>
-        <p>Refresh once Please</p>
+        <p>Refresh once Please-</p>
         <ul>
           {ideas?.current.map((idea) => (
             <li key={idea.$id}>
