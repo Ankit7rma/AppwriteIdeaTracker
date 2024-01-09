@@ -1,0 +1,64 @@
+/* Reset some default styles */
+body,
+ul,
+li,
+a,
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Navbar styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav span {
+    margin-right: 10px;
+}
+
+nav button {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav div {
+        margin-top: 10px;
+    }
+
+    nav a,
+    nav span,
+    nav button {
+        margin: 5px 0;
+    }
+}
